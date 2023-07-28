@@ -1,6 +1,7 @@
 <div align="center">
+  
 # atmegaStepperDriver  
-Open source stepper driver powered by Atmega chip
+  Open source stepper driver powered by Atmega chip
 
 ## Quick Description
 This project was design to be used in my [Modul3D](https://github.com/eGuardianDev/Modul3D) project.
