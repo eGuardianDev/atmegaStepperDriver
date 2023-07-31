@@ -1,0 +1,6 @@
+Transitor need specific activation power (amps) to use at full capability
+https://forum.arduino.cc/t/custom-h-bridge-circuit-not-working-when-adding-motor/379745
+there is problem
+if the powered voltage is change that will change the current and the resistors needed to power the grounding transitor
+this will be really problematic
+the diagram above will make the circuit more compact and use less parts, but can't 
