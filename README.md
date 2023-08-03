@@ -19,14 +19,18 @@ The idea to have simple, cheap, open source stepper dirver for stepper driver
 - [X] H-bridge configuration
 - [ ] Connect the pins to the transistor of H-bridge
 - [X] Protection system
-- [ ] Test protection system
+- [X] Test protection system
+  - [ ] for motor
+  - [ ] power supply
 - [X] Power supply for the chip
 - [ ] Pins for communication
-- [ ] Pins for power
-- [ ] Sepreate pins for power for the motor
-- [ ] Calculate tranistor resistor values
-- [ ] Change diode foot print
-- [ ] Add capacitor before transitor for smooth curves
+- [X] Pins for power
+- [X] Sepreate pins for power for the motor
+- [X] Calculate transistor resistor values
+- [X] Change diode foot print
+- [X] Add capacitor before transitor for smooth curves
 
+## Notes
+Not sure if the 16 bit timer is going to be used.
 </div>
 
