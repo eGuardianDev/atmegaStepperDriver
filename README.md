@@ -1,5 +1,5 @@
 <div align="center">
-  
+
 # atmegaStepperDriver  
   Open source stepper driver powered by Atmega chip
 
@@ -16,19 +16,24 @@ The idea to have simple, cheap, open source stepper dirver for stepper driver
 - [ ] I2C communcation interface  
 
 ## Current Development
+### Hardware
+#### Power
+- [X] Power supply for the chip
+- [X] Sepreate pins for power for the motor
+- [X] Pins for power
+#### Main system
 - [X] H-bridge configuration
 - [ ] Connect the pins to the transistor of H-bridge
-- [X] Protection system
-- [X] Test protection system
-  - [ ] for motor
-  - [ ] power supply
-- [X] Power supply for the chip
-- [ ] Pins for communication
-- [X] Pins for power
-- [X] Sepreate pins for power for the motor
 - [X] Calculate transistor resistor values
-- [X] Change diode foot print
+#### Communication
+- [ ] Pins for communication
+#### Protection
 - [X] Add capacitor before transitor for smooth curves
+- [ ] for motor
+- [ ] power supply
+- [X] Test protection system
+#### Misc.
+- [X] Change diode foot print
 
 ## Notes
 Not sure if the 16 bit timer is going to be used.
