@@ -13,7 +13,11 @@ The idea to have simple, cheap, open source stepper driver for stepper motor
 - H-Bridge design  
 - Flyback Voltage protection  
 - Standart stepper driver communication  
-- I2C communcation interface  
+- I2C communcation interface
+
+
+<img src="PCB/Schematic Design.png">
+<img src="PCB/3D View.png">
 
 ## Current Development
 ### Hardware
