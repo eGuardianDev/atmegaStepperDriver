@@ -27,17 +27,17 @@ The idea to have simple, cheap, open source stepper driver for stepper motor
 - [X] Pins for power
 #### Main system
 - [X] H-bridge configuration
-- [ ] Connect the pins to the transistor of H-bridge
+- [X] Connect the pins to the transistor of H-bridge
 - [X] Calculate transistor resistor values
 #### Communication
-- [ ] Pins for communication
-- [ ] I2C pins
-- [ ] Address Changer
-- [ ] Step mode
+- [X] Pins for communication
+- [X] I2C pins
+- [X] Address Changer
+- [ ] Step mode (maybe in next version or firmware based)
 #### Protection
 - [X] Add capacitor before transitor for smooth curves, but don't test it
 - [X] Flyback protection (with ziner diode) 
-- [ ] Power supply smoothing and return diode
+- [X] Power supply smoothing and return diode
 - [ ] Fulling test protection system
 #### Misc.
 - [X] Change diode foot print
