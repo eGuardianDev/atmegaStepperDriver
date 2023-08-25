@@ -38,7 +38,7 @@ The idea to have simple, cheap, open source stepper driver for stepper motor
 - [X] Add capacitor before transitor for smooth curves, but don't test it
 - [X] Flyback protection (with ziner diode) 
 - [X] Power supply smoothing and return diode
-- [ ] Fulling test protection system
+- [ ] Fully test protection system
 #### Misc.
 - [X] Change diode foot print
 
