@@ -7331,7 +7331,7 @@
     (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp 9f0c385c-cb60-494d-b596-bf89b9d0b026))
   (gr_line (start 72.39 142.24) (end 72.39 53.975)
     (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp b03ad751-10bb-434c-a129-4a016f5fadb8))
-  (gr_text "atMega Stepper Driver V0.8.0" (at 108.533758 117.135771) (layer "B.SilkS") (tstamp 6de31da4-14c7-43da-a4d7-e800b5a9a308)
+  (gr_text "atMega Stepper Driver V0.8.2" (at 108.533758 117.135771) (layer "B.SilkS") (tstamp 6de31da4-14c7-43da-a4d7-e800b5a9a308)
     (effects (font (size 1.5 1.5) (thickness 0.3) bold) (justify left bottom mirror))
   )
   (gr_text "fan" (at 123.083564 77.940884 90) (layer "F.SilkS") (tstamp 25ccd8a8-83e8-40e7-853c-5e8686e0bd83)
