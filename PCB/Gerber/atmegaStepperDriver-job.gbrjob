@@ -5,16 +5,16 @@
       "Application": "Pcbnew",
       "Version": "7.0.6"
     },
-    "CreationDate": "2023-08-09T12:25:19+03:00"
+    "CreationDate": "2023-08-30T11:13:53+03:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "atmegaStepperDriver",
       "GUID": "61746d65-6761-4537-9465-707065724472",
-      "Revision": "v0.7.1"
+      "Revision": "V0.8.2"
     },
     "Size": {
-      "X": 51.535,
+      "X": 50.9,
       "Y": 92.175
     },
     "LayerNumber": 2,
@@ -27,7 +27,7 @@
       "PadToPad": 0.2,
       "PadToTrack": 0.2,
       "TrackToTrack": 0.2,
-      "MinLineWidth": 0.25,
+      "MinLineWidth": 0.5,
       "TrackToRegion": 0.5,
       "RegionToRegion": 0.5
     }
