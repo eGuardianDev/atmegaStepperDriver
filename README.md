@@ -14,12 +14,15 @@ The idea to have simple, cheap, open source stepper driver for stepper motor
 - Flyback Voltage protection  
 - Standart stepper driver communication  
 - I2C communcation interface
+- Fan controll
 
 
 <img src="PCB/Schematic Design.png">
 <img src="PCB/3D View.png">
 
 ## Current Development
+### Firmware
+ - [ ] Todo...
 ### Hardware
 #### Power
 - [X] Power supply for the chip
@@ -44,5 +47,6 @@ The idea to have simple, cheap, open source stepper driver for stepper motor
 
 ## Notes
 Not sure if the 16 bit timer is going to be used.
+Failed 2 orders ;-;
 </div>
 
