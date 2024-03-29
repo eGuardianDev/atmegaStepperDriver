@@ -1,5 +1,3 @@
-<div align="center">
-
 # atmegaStepperDriver  
   Open source stepper driver powered by Atmega chip
 
@@ -45,8 +43,6 @@ The idea to have simple, cheap, open source stepper driver for stepper motor
 #### Misc.
 - [X] Change diode foot print
 
-## Notes
-Not sure if the 16 bit timer is going to be used.
-Failed 2 orders ;-;
-</div>
+
+
 
