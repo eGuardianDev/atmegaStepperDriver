@@ -539,7 +539,7 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 72788bf1-74f1-4fd5-901c-5e19fbaece70)
   )
-  (hierarchical_label "Power input" (shape input) (at 92.6572 87.8452 0) (fields_autoplaced)
+  (hierarchical_label "Power 5v" (shape input) (at 146.05 82.55 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid a4426bc6-54f4-43a5-a545-bfcbfd25db35)
   )
@@ -550,6 +550,40 @@
   (hierarchical_label "Ground" (shape input) (at 142.24 82.55 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid a9140a36-550e-485e-a57f-0ba7c8f1313d)
+  )
+
+  (symbol (lib_id "power:+5V") (at 146.05 82.55 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 28ffeac9-5942-41ea-9318-4e74883d608a)
+    (property "Reference" "#PWR033" (at 146.05 78.74 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+5V" (at 146.05 86.36 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 146.05 82.55 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 146.05 82.55 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 1d19ab9a-0c37-44f4-a04d-cb64b4f831a5))
+    (instances
+      (project "atmegaStepperDriver"
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/50d10c8e-db41-49f6-876e-74ecf5bb7f1a"
+          (reference "#PWR033") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/2ed833cf-10fa-4bde-810e-ad6d3427afac"
+          (reference "#PWR036") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/f39905cc-c290-436c-aa2b-a9f03eefcfde"
+          (reference "#PWR042") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/62d8831a-46d2-48a9-80d1-37d529f4e814"
+          (reference "#PWR047") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "power:GND") (at 142.24 82.55 0) (unit 1)
@@ -567,11 +601,20 @@
     (property "Datasheet" "" (at 142.24 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 649d04b7-4814-445a-b77e-aff78a9dee03))
+    (pin "1" (uuid d3f88dab-926d-45a7-afaf-1e9bccfbd746))
     (instances
       (project "atmegaStepperDriver"
         (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/50d10c8e-db41-49f6-876e-74ecf5bb7f1a"
           (reference "#PWR032") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/2ed833cf-10fa-4bde-810e-ad6d3427afac"
+          (reference "#PWR035") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/f39905cc-c290-436c-aa2b-a9f03eefcfde"
+          (reference "#PWR041") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/62d8831a-46d2-48a9-80d1-37d529f4e814"
+          (reference "#PWR046") (unit 1)
         )
       )
     )
@@ -592,13 +635,22 @@
     (property "Datasheet" "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=TIP42.PDF" (at 107.95 80.01 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (pin "1" (uuid c355e4ff-5a18-4f94-85c2-11b00a1f0f04))
-    (pin "2" (uuid 7d715eea-06a6-4b42-8720-4ed7217566e8))
-    (pin "3" (uuid 1daa5571-35b9-4962-8239-2c5f135f733a))
+    (pin "1" (uuid 56ce5d1a-e746-4604-81b1-5468e52e5635))
+    (pin "2" (uuid 1ea8eb96-8562-4803-90ff-12d102beaa4e))
+    (pin "3" (uuid 6549a34b-3563-4af8-8980-46ad0522529c))
     (instances
       (project "atmegaStepperDriver"
         (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/50d10c8e-db41-49f6-876e-74ecf5bb7f1a"
           (reference "Q18") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/2ed833cf-10fa-4bde-810e-ad6d3427afac"
+          (reference "Q1") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/f39905cc-c290-436c-aa2b-a9f03eefcfde"
+          (reference "Q5") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/62d8831a-46d2-48a9-80d1-37d529f4e814"
+          (reference "Q9") (unit 1)
         )
       )
     )
@@ -619,13 +671,22 @@
     (property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf" (at 115.57 114.3 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (pin "1" (uuid 89b46aa4-9d9e-41b4-afe4-9c96d72f04fb))
-    (pin "2" (uuid 135ffa9d-5eb1-4aee-ba5e-0ac18a72ac90))
-    (pin "3" (uuid a8d092ae-904a-4233-83ee-4faf9152d7ac))
+    (pin "1" (uuid 2900675a-9a5a-4464-8e98-51ed195f40f1))
+    (pin "2" (uuid b1e264a3-8bdc-4608-84a7-b75c2a86f739))
+    (pin "3" (uuid a907ee01-0692-40b3-92a6-bd1b8443cddb))
     (instances
       (project "atmegaStepperDriver"
         (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/50d10c8e-db41-49f6-876e-74ecf5bb7f1a"
           (reference "Q19") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/2ed833cf-10fa-4bde-810e-ad6d3427afac"
+          (reference "Q2") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/f39905cc-c290-436c-aa2b-a9f03eefcfde"
+          (reference "Q6") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/62d8831a-46d2-48a9-80d1-37d529f4e814"
+          (reference "Q10") (unit 1)
         )
       )
     )
@@ -646,12 +707,21 @@
     (property "Datasheet" "~" (at 107.95 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0cac926f-5de9-4586-b23e-974fc6dfeadd))
-    (pin "2" (uuid d8402478-fc2b-4c63-b355-30f9d59cacff))
+    (pin "1" (uuid b2c74b7c-4578-4daa-adfa-e9165e37740d))
+    (pin "2" (uuid 11d260ca-79e9-4164-910d-b5f0d0d647e9))
     (instances
       (project "atmegaStepperDriver"
         (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/50d10c8e-db41-49f6-876e-74ecf5bb7f1a"
           (reference "R22") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/2ed833cf-10fa-4bde-810e-ad6d3427afac"
+          (reference "R4") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/f39905cc-c290-436c-aa2b-a9f03eefcfde"
+          (reference "R8") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/62d8831a-46d2-48a9-80d1-37d529f4e814"
+          (reference "R12") (unit 1)
         )
       )
     )
@@ -672,12 +742,55 @@
     (property "Datasheet" "~" (at 118.11 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 561933b0-08f2-447e-a9c2-9ee178e3b302))
-    (pin "2" (uuid 39402888-9ab7-4e55-86f8-0237a8cc4b4b))
+    (pin "1" (uuid 01bbd9d8-d561-4116-8c78-18e85c2c4b16))
+    (pin "2" (uuid 6da4b038-9e5e-44b3-bf1b-07c95d9a8576))
     (instances
       (project "atmegaStepperDriver"
         (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/50d10c8e-db41-49f6-876e-74ecf5bb7f1a"
           (reference "R23") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/2ed833cf-10fa-4bde-810e-ad6d3427afac"
+          (reference "R5") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/f39905cc-c290-436c-aa2b-a9f03eefcfde"
+          (reference "R9") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/62d8831a-46d2-48a9-80d1-37d529f4e814"
+          (reference "R13") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 132.08 116.84 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 7f4c42fa-4c39-484c-86d0-cadffc2b8430)
+    (property "Reference" "#PWR040" (at 138.43 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 135.89 116.84 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 132.08 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 132.08 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid dd40f17b-5041-4746-989a-167e3c8c3cfc))
+    (instances
+      (project "atmegaStepperDriver"
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/50d10c8e-db41-49f6-876e-74ecf5bb7f1a"
+          (reference "#PWR040") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/2ed833cf-10fa-4bde-810e-ad6d3427afac"
+          (reference "#PWR034") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/f39905cc-c290-436c-aa2b-a9f03eefcfde"
+          (reference "#PWR039") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/62d8831a-46d2-48a9-80d1-37d529f4e814"
+          (reference "#PWR045") (unit 1)
         )
       )
     )
@@ -698,12 +811,21 @@
     (property "Datasheet" "~" (at 127 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1584311f-6bf4-4677-9745-527970ae98ec))
-    (pin "2" (uuid 34ac9341-7f85-4b5b-81b1-82768db7b781))
+    (pin "1" (uuid 297f1fdb-e235-4284-9ae3-617f151e007c))
+    (pin "2" (uuid 95ec27b0-2ec3-4823-aee8-dce0e160fa3d))
     (instances
       (project "atmegaStepperDriver"
         (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/50d10c8e-db41-49f6-876e-74ecf5bb7f1a"
           (reference "R24") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/2ed833cf-10fa-4bde-810e-ad6d3427afac"
+          (reference "R6") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/f39905cc-c290-436c-aa2b-a9f03eefcfde"
+          (reference "R10") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/62d8831a-46d2-48a9-80d1-37d529f4e814"
+          (reference "R14") (unit 1)
         )
       )
     )
@@ -724,13 +846,22 @@
     (property "Datasheet" "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=tip41.PDF" (at 127 119.38 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (pin "1" (uuid d98d2c22-cc67-4e75-9106-9bd3d59c7fcc))
-    (pin "2" (uuid ce3e4568-6694-4973-a965-fdc77db4ad99))
-    (pin "3" (uuid e6906740-a165-4717-9223-cd8e3b55f3e3))
+    (pin "1" (uuid 96b104ab-895f-4f19-ace2-f1c004df36d4))
+    (pin "2" (uuid 919e528a-d2f0-437e-8e28-13b0ac40a9fa))
+    (pin "3" (uuid 6289bdfd-5120-4e0b-9b39-756a0ee0be7f))
     (instances
       (project "atmegaStepperDriver"
         (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/50d10c8e-db41-49f6-876e-74ecf5bb7f1a"
           (reference "Q21") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/2ed833cf-10fa-4bde-810e-ad6d3427afac"
+          (reference "Q4") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/f39905cc-c290-436c-aa2b-a9f03eefcfde"
+          (reference "Q8") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/62d8831a-46d2-48a9-80d1-37d529f4e814"
+          (reference "Q12") (unit 1)
         )
       )
     )
@@ -751,11 +882,20 @@
     (property "Datasheet" "" (at 120.65 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 55bb1bcc-cc46-4405-a559-598783ee0646))
+    (pin "1" (uuid 080f3e34-9f0e-4f16-ae1b-0cc70f19258a))
     (instances
       (project "atmegaStepperDriver"
         (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/50d10c8e-db41-49f6-876e-74ecf5bb7f1a"
           (reference "#PWR030") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/2ed833cf-10fa-4bde-810e-ad6d3427afac"
+          (reference "#PWR017") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/f39905cc-c290-436c-aa2b-a9f03eefcfde"
+          (reference "#PWR037") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/62d8831a-46d2-48a9-80d1-37d529f4e814"
+          (reference "#PWR043") (unit 1)
         )
       )
     )
@@ -776,12 +916,21 @@
     (property "Datasheet" "~" (at 107.95 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 17ff3ba7-c017-4c46-a636-c186329a64c7))
-    (pin "2" (uuid c9fc985e-6396-4e32-a60e-695684461c7d))
+    (pin "1" (uuid 1519e101-8cb0-4fb6-a133-b50ffc8b9d65))
+    (pin "2" (uuid ad8a86f5-5f19-4c50-8734-955700f4df9e))
     (instances
       (project "atmegaStepperDriver"
         (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/50d10c8e-db41-49f6-876e-74ecf5bb7f1a"
           (reference "R21") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/2ed833cf-10fa-4bde-810e-ad6d3427afac"
+          (reference "R3") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/f39905cc-c290-436c-aa2b-a9f03eefcfde"
+          (reference "R7") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/62d8831a-46d2-48a9-80d1-37d529f4e814"
+          (reference "R11") (unit 1)
         )
       )
     )
@@ -802,11 +951,20 @@
     (property "Datasheet" "" (at 123.19 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 97c5282b-7380-4fd8-aded-222ebacaca94))
+    (pin "1" (uuid c30501db-8e02-4369-afe9-891c4c6d0436))
     (instances
       (project "atmegaStepperDriver"
         (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/50d10c8e-db41-49f6-876e-74ecf5bb7f1a"
           (reference "#PWR031") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/2ed833cf-10fa-4bde-810e-ad6d3427afac"
+          (reference "#PWR019") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/f39905cc-c290-436c-aa2b-a9f03eefcfde"
+          (reference "#PWR038") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/62d8831a-46d2-48a9-80d1-37d529f4e814"
+          (reference "#PWR044") (unit 1)
         )
       )
     )
@@ -827,13 +985,22 @@
     (property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" (at 118.11 88.9 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (pin "1" (uuid 75ae4ef9-54a7-4583-b15f-14a11cf8c39f))
-    (pin "2" (uuid 6a9a2d13-dbe3-4ead-a61b-81721e9f06d3))
-    (pin "3" (uuid 880b6cb4-35b3-437f-93ce-5c1ae9a0ad83))
+    (pin "1" (uuid d3636e79-c82a-4f7f-b75b-e68c060b252e))
+    (pin "2" (uuid fded5b18-2c36-4d35-aa90-f48f32f101ba))
+    (pin "3" (uuid b50f079e-f70a-46ab-9231-4f8105473fbb))
     (instances
       (project "atmegaStepperDriver"
         (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/50d10c8e-db41-49f6-876e-74ecf5bb7f1a"
           (reference "Q20") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/2ed833cf-10fa-4bde-810e-ad6d3427afac"
+          (reference "Q3") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/f39905cc-c290-436c-aa2b-a9f03eefcfde"
+          (reference "Q7") (unit 1)
+        )
+        (path "/c84e7e69-c1fd-4499-93bc-6ad0c4ebade1/62d8831a-46d2-48a9-80d1-37d529f4e814"
+          (reference "Q11") (unit 1)
         )
       )
     )
