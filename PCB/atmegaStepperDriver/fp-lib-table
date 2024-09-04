@@ -1,4 +1,5 @@
 (fp_lib_table
   (version 7)
   (lib (name "Buttons_Switches_THT")(type "KiCad")(uri "/home/dogewithfedora19/Documents/Kicad/Buttons_Switches_THT.pretty")(options "")(descr ""))
+  (lib (name "Logo")(type "KiCad")(uri "C:/Users/PC/Documents/KiCad/7.0/Images.pretty")(options "")(descr ""))
 )
